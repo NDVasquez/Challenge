@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo">
+    </header>
+    <main>
+        <section class="Entrada">
+            <div class="contenedorcajatexto">
+                <textarea id="cajatexto" placeholder="Ingrese el texto aquí" class="cajatexto"></textarea>
+                <img src="/imagenes/Frame 1.png">
+            </div>
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar" onclick="btnEncriptar()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="btnDesencriptar()">
+            </div>
+        </section>
+        <section class="resultado">
+            <div class="contenedor-resultado">
+                <p id="resultado" class="textoresultado"></p>
+            </div>
+            <div class="contenedorframe">
+                <img src="imagenes/Frame.png" alt="Frame">
+                <img id="frame5" src="/imagenes/Frame5.png" alt="Frame 5">
+                <img id="frame6" src="/imagenes/Frame6.png" alt="Frame 6">
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar" onclick="copiarTexto()">
+            </div>
+
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
